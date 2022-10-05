@@ -20,9 +20,5 @@ $ export SUCCESS_URL=http://localhost:5000/checkout/successful, CANCEL_URL=http:
  - Refer to postman collection in the codebase with the file under postman_collection folder
  
 ## Contributors
-[Priyanshi Srivastav](https://www.linkedin.com/in/vikas-patidar-0106/)
-
-## License
-
-Built under [MIT](http://www.opensource.org/licenses/mit-license.php) license.
+[Priyanshi Srivastav](https://www.linkedin.com/in/priyanshi-srivastava-586b6b143/)
 
