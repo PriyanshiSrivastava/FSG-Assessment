@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<title>Book App</title>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div class="todo-container">
+<h2>Books</h2>
+<div>
+<ul>
+    <% books.forEach(details => { %>
+    <li class="todo-list-item" style="display: block;">
+     <div class="todo-list-item-name"><%= details.name %></div>
+    <img src="<%= details.imageLink %>" width="100px" height="100px">
+    <a href="/<%= details.id %>" style="font-size: 10px;"><b><%= details.price %> USD</b></a>
+    <p style="font-size: 10px;"><%= details.genre.name %></p>
+    </li>
+    <% }) %>
+    </ul>
+</div>
+</div>
+</body>

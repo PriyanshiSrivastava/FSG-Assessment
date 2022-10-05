@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "714a46de-c50e-4ef1-ae32-45f521d4d5d2",
+		"name": "App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2600929"
+	},
+	"item": [
+		{
+			"name": "genre",
+			"item": [
+				{
+					"name": "create api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"love story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/genre/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"genre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"love story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/genre/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"genre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get data api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"love story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/genre/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"genre",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update data api",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"loveff story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/genre/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"genre",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete data api",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"loveff story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/genre/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"genre",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "create api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test book\",\r\n    \"imageLink\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\",\r\n    \"price\": 2000,\r\n    \"genreId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"love story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get data api",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"love story\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/book/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update data api",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test book\",\r\n    \"imageLink\": \"https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg\",\r\n    \"price\":42000,\r\n    \"genreId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/1",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
