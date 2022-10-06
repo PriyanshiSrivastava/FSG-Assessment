@@ -5,10 +5,10 @@ const configFile = require("../../config/config");
 const config = configFile[env];
 
 const sequelize = new Sequelize(
-  config.database,
-  config.username,
-  config.password, {
-    host: config.host,
+  'postgres',
+  'postgres',
+  'postgres', {
+    host: 'localhost',
     dialect: "postgres",
     operatorsAliases: "0",
     logging: true,

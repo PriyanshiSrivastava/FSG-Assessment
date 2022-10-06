@@ -4,18 +4,18 @@
     <title>Book App</title>
     <link rel="stylesheet" href="/static/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
-    </script>
 </head>
 
 <body>
     <div class="todo-container">
         <h2>Books</h2>
-        <input type="submit" id='total' onclick="checkout()" value="Checkout">
+        <form action="/checkout/pay?price=20" method="post">
+            <div id="uid" <%= test %>></div>
+        <input type="submit" id='total' value="Checkout">
+        </form>
         <div>
             <ul>
                 <% books.forEach(details=> { %>
@@ -30,7 +30,7 @@
                         <p style="font-size: 10px;">
                             <%= details.genre.name %>
                         </p>
-                        <input id="opt1" type="checkbox" name="check1" onclick="addValue('<%= details.price %>')" />
+                        <input id="opt1" type="checkbox" name="check1" />
                     </li>
                     <% }) %>
             </ul>
@@ -38,14 +38,12 @@
     </div>
 </body>
 <script type="text/javascript">
-    let total = 0
-    function addValue(price) {
-        console.log("price", price)
-        total += parseInt(price)
-        console.log(total);
-    };
-    function checkout() {
-        console.log("price-", total)
-        window.open("/checkout/pay?price=" + total, "_self")
-    }
+    $(document).ready(function() {
+        console.log("$)",$("#uid").val)
+        // var x = $("#uid"); 
+        var x = document.getElementById("uid");
+        console.log(x,"==========",x.value)
+        alert(x);  // now JS variable 'x' has the uid that's passed from the node backend.
+    });
+    
 </script>

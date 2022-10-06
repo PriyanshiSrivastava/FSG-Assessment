@@ -41,7 +41,7 @@ exports.getGenre = async (filter = {}) => {
  */
 exports.saveGenre = async (bodyData) => {
 	try {
-		console.log(db.genre,"GenreGenreGenre",db.Genre,db)
+		console.log(db.genre, "GenreGenreGenre", db.Genre, db)
 		await db.genres.create(bodyData);
 		return Promise.resolve();
 	} catch (error) {

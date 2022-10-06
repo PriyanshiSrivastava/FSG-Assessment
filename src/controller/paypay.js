@@ -5,6 +5,7 @@ paypal.configure({
 	'client_secret': process.env.CLIENT_SECRET
 });
 exports.pay = async (req, res) => {
+	console.log("req-----")
 	const paymentJson = {
 		"intent": "sale",
 		"payer": {

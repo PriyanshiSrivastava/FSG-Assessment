@@ -3,7 +3,7 @@
 
 const db = require("../../models/index");
 const {
-    Sequelize, sequelize
+	Sequelize, sequelize
 } = require("../utils/sequelize");
 /**
  * Function get all the Books from database based on the filter.
@@ -65,9 +65,13 @@ exports.saveBook = async (bodyData) => {
  */
 exports.updateBookDetails = async (filter, bodyData) => {
 	try {
-		const alreadyFound = await db.books.findOne({ where: { name: bodyData.name,  id: {
-			[Sequelize.Op.ne]: filter.id
-		} } })
+		const alreadyFound = await db.books.findOne({
+			where: {
+				name: bodyData.name, id: {
+					[Sequelize.Op.ne]: filter.id
+				}
+			}
+		})
 		if (alreadyFound) {
 			return Promise.reject('Data already exists');
 		} else {
